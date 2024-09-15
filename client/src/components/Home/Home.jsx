@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from './home.module.css';
+import styles from './Home.module.css';
 import About from "../../assets/About.png"
 import Chat from "../../assets/Chat..png"
 import FAQ from "../../assets/FAQs.png"
