@@ -1,0 +1,156 @@
+/* Chat container */
+.chatContainer {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: flex-end;
+    background-color: #f7f7f7;
+    padding: 50px 200px;
+    background: #000;
+    /* overflow-y: hidden; */
+    color: white;
+    /* width: 50%; */
+    /* margin: 0 auto; */
+
+}
+
+.chatWindow::-webkit-scrollbar {
+    display: none;
+}
+
+/* Date header for the chat */
+.dateHeader {
+    /* text-align: center; */
+    padding: 10px 0;
+    color: #a0a0a0;
+    font-size: 12px;
+}
+
+/* Chat window to display messages */
+.chatWindow {
+    padding: 10px;
+    overflow-y: auto;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* User message bubble */
+.userMessage {
+    width: 40%;
+    font-size: 40px;
+    background-color: #f2f2f2;
+    color: #000;
+    padding: 12px 15px;
+    margin: 5px 0;
+    border-radius: 20px;
+    max-width: 60%;
+    align-self: flex-start;
+    font-size: 14px;
+    word-wrap: break-word;
+    line-height: 1.4;
+}
+
+
+
+/* Bot message bubble */
+.botMessage {
+    width: 40%;
+    font-size: 40px;
+    background-color: #7b61ff;
+    color: white;
+    padding: 12px 15px;
+    margin: 5px 0;
+    border-radius: 20px;
+    max-width: 60%;
+    align-self: flex-end;
+    /* font-size: 14px; */
+    word-wrap: break-word;
+    line-height: 1.4;
+}
+
+.botMessage p,
+.userMessage p {
+    font-size: 20px;
+    color: white;
+    text-align: left;
+}
+
+.userMessage p {
+    color: black;
+}
+
+/* Message input section */
+.inputContainer {
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #fff;
+    border-top: 1px solid #e0e0e0;
+    background: #000;
+}
+
+/* Message input field */
+.input {
+    flex-grow: 1;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #e0e0e0;
+    border-radius: 10px;
+    margin-right: 10px;
+    outline: none;
+}
+
+/* Send button */
+.sendButton {
+    background-color: #7b61ff;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Send button hover effect */
+.sendButton:hover {
+    background-color: #6a55dd;
+}
+
+/* Responsive adjustments */
+
+
+
+/* Smaller mobile view (for screens 480px or smaller) */
+@media (max-width: 480px) {
+    .chatContainer {
+        padding: 8px;
+
+    }
+
+    .userMessage,
+    .botMessage {
+        max-width: 90%;
+        width: 90%;
+        /* Use more of the screen for messages */
+        font-size: 12px;
+    }
+
+    .userMessage p,
+    .botMessage p {
+        font-size: 20px;
+    }
+
+    .input {
+        font-size: 12px;
+        /* Further adjust input size */
+    }
+
+    .sendButton {
+        padding: 7px;
+        /* Further reduce button padding */
+    }
+}

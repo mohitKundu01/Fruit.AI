@@ -1,0 +1,148 @@
+.container {
+    max-width: 700px;
+    width: 100%;
+    padding: 20px;
+    background: #f5f5f5;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+    font-family: 'Arial', sans-serif;
+    margin-top: 100px;
+   
+}
+
+.wrapper {
+    border-radius: 10px;
+    border: 1px solid #ddd;
+    overflow: hidden;
+    background-color: #fff;
+}
+
+
+.textInput {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    padding: 10px;
+}
+
+.textarea {
+    height: 200px;
+    width: 100%;
+    border: 1px solid #ddd;
+    outline: none;
+    resize: none;
+    background: #fdfdfd;
+    font-size: 16px;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.05);
+    transition: border-color 0.3s;
+}
+
+.textarea:focus {
+    border-color: #007bff;
+}
+
+.fromText {
+    border-right: 1px solid #ddd;
+}
+
+.toText {
+    background-color: #f0f0f0;
+}
+
+.controls {
+    list-style: none;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid #ddd;
+    background-color: #fafafa;
+}
+
+.controlRow {
+    display: flex;
+    align-items: center;
+}
+
+.icons {
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+}
+
+.icon {
+    color: #555;
+    font-size: 18px;
+    cursor: pointer;
+    transition: color 0.3s, transform 0.3s;
+    margin-left: 10px;
+}
+
+.icon:hover {
+    color: #007bff;
+    transform: scale(1.1);
+}
+
+.exchange {
+    color: #007bff;
+    cursor: pointer;
+    font-size: 24px;
+    transition: color 0.3s, transform 0.3s;
+}
+
+.exchange:hover {
+    color: #0056b3;
+    transform: rotate(180deg);
+}
+
+select {
+    font-size: 16px;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background: #fff;
+    transition: border-color 0.3s;
+}
+
+select:hover,
+select:focus {
+    border-color: #007bff;
+}
+
+.translateButton {
+    width: 100%;
+    padding: 15px;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    margin-top: 20px;
+    font-size: 18px;
+    border-radius: 5px;
+    background: #007bff;
+    transition: background 0.3s;
+}
+
+.translateButton:hover {
+    background: #0056b3;
+}
+
+.textarea::-webkit-scrollbar {
+    width: 6px;
+}
+
+.textarea::-webkit-scrollbar-thumb {
+    background: #bbb;
+    border-radius: 10px;
+}
+
+select::-webkit-scrollbar {
+    width: 8px;
+}
+
+select::-webkit-scrollbar-thumb {
+    background: #999;
+    border-radius: 10px;
+}

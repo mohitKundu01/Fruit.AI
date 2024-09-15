@@ -1,0 +1,65 @@
+.faqSection {
+    padding: 20px;
+    background: linear-gradient(90deg, #E0BCF3 0%, #7EE7EE 100%);
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+
+}
+
+
+.faqAccordion {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+h2 {
+    margin-bottom: 20px;
+    font-size: 2rem;
+    text-align: center;
+    color: #333;
+}
+
+
+
+@media (max-width: 480px) {
+    .faqSection {
+        gap: 5px;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+}
+
+
+
+.addButton {
+    background-color: #28a745;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-bottom: 20px;
+    transition: background-color 0.3s ease;
+}
+
+.addButton:hover {
+    background-color: #218838;
+}
+/* Responsive for Mobile */
+@media (max-width: 480px) {
+
+    .addButton,
+    .editButton,
+    .deleteButton {
+        font-size: 14px;
+        padding: 8px 10px;
+    }
+}

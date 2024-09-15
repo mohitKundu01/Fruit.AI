@@ -1,0 +1,204 @@
+.container {
+    border: 1px solid #ccc;
+    border-radius: 15px;
+    overflow: hidden;
+    margin-bottom: 20px;
+    transition: box-shadow 0.3s ease;
+    width: 60%;
+    height: 220px;
+    padding: 20px 30px;
+    background: #EAEFEBCC;
+}
+
+
+.card {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+
+}
+
+.container:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.image {
+    width: 200px;
+}
+
+
+.image img {
+    width: 215.06px;
+    height: 89.44px;
+    border-radius: 25px;
+    opacity: 0px;
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.image h2 {
+    font-size: 1.5rem;
+    margin-top: 5px;
+    color: #333;
+    color: red;
+    font-size: 20px;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+
+
+}
+
+.content h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #333;
+    color: red;
+    text-align: left;
+
+}
+
+.content p {
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #0386D0;
+}
+
+
+
+@media (max-width: 480px) {
+    .container {
+        width: 90vw;
+        padding: 20px;
+        /* display: flex; */
+        /* flex-direction: column; */
+        gap: 10px;
+
+    }
+
+    .card {
+        gap: 15px;
+    }
+
+    .image img {
+        border-radius: 10px;
+        width: 115.06px;
+        height: 89.44px;
+    }
+
+    .image h2 {
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 21px;
+        text-align: left;
+    }
+
+    .content h2 {
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 21px;
+        text-align: left;
+    }
+
+    .content p {
+        font-size: 13px;
+        font-weight: 700;
+        line-height: 19.5px;
+        text-align: left;
+    }
+
+    .image {
+        width: 300px;
+    }
+}
+
+
+.editButton,
+.deleteButton {
+    padding: 8px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    margin: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.editButton {
+    background-color: #007bff;
+    color: white;
+}
+
+.editButton:hover {
+    background-color: #0056b3;
+}
+
+.deleteButton {
+    background-color: #dc3545;
+    color: white;
+}
+
+.deleteButton:hover {
+    background-color: #c82333;
+}
+
+
+.actions {
+    display: flex;
+    gap: 20px;
+    align-items: left;
+    width: 100%;
+    padding: 30px;
+    z-index: 2;
+}
+
+
+
+.container {
+    position: relative;
+}
+
+.actions {
+    position: absolute;
+    top: 148px;
+    left: 770px;
+    display: flex;
+    gap: 10px;
+    z-index: 2;
+}
+
+.editIcon,
+.deleteIcon {
+    cursor: pointer;
+    font-size: 20px;
+    color: #333;
+    transition: color 0.3s ease;
+
+}
+
+
+.editIcon:hover {
+    color: #007bff;
+}
+
+.deleteIcon:hover {
+    color: #dc3545;
+}
+
+@media (max-width: 480px) {
+    .actions {
+        top: 140px;
+        right: 3px;
+        left: 0px;
+        gap: 6px;
+    }
+
+    .editIcon,
+    .deleteIcon {
+        font-size: 16px;
+    }
+}

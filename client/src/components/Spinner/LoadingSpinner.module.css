@@ -1,0 +1,38 @@
+.spinnerContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    /* Full height to center the spinner */
+    background: black;
+}
+
+.spinner {
+    border: 6px solid rgba(0, 0, 0, 0.1);
+    /* Light border */
+    border-left-color: #3498db;
+    /* Blue for the rotating segment */
+    border-radius: 50%;
+    width: 50px;
+    /* Spinner size */
+    height: 50px;
+    animation: spin 1s linear infinite;
+}
+
+.loadingText {
+    margin-top: 15px;
+    font-size: 18px;
+    color: #3498db;
+    /* Matching the spinner's color */
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}

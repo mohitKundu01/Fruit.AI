@@ -1,0 +1,222 @@
+/* Login.module.css */
+.loginContainer {
+    width: 30%;
+    padding: 20px 10px;
+    background-color: #fff;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    margin: 50px auto;
+
+}
+
+.loginForm {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    padding: 20px;
+}
+
+h2 {
+    margin-bottom: 10px;
+    font-size: 24px;
+}
+
+p {
+    font-size: 12px;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.tabs {
+    display: flex;
+    justify-content: center;
+    margin: 15px 0 30px 0;
+}
+
+.tabs button {
+    background: none;
+    border: none;
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    color: #A6A6A6;
+
+}
+
+.tabs .active {
+    border-bottom: 2px solid black;
+    color: #036BB9;
+}
+
+.inputGroup {
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.icon,
+.iconLeft,
+.iconRight {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    align-items: center;
+    color: gray;
+}
+
+.icon {
+    left: 10px;
+}
+
+.iconLeft {
+    left: 10px;
+    /* Adjust as necessary */
+}
+
+.iconRight {
+    right: 10px;
+    cursor: pointer;
+}
+
+.input {
+    width: 100%;
+    padding: 10px 50px;
+    font-size: 16px;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    outline: none;
+}
+
+.input:focus {
+    border-color: orange;
+    background-color: white;
+    outline: none;
+}
+
+
+
+.options {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    font-size: 14px;
+}
+
+.forgotPassword {
+    color: #007bff;
+}
+
+.loginButton {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 12px;
+    width: 100%;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+.socialText {
+    margin-bottom: 10px;
+}
+
+.socialIcons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.socialIcons i {
+    font-size: 24px;
+    color: #007bff;
+    cursor: pointer;
+}
+
+.fingerprint {
+    margin-top: 30px;
+}
+
+.fingerprint i {
+    font-size: 50px;
+    color: #007bff;
+    cursor: pointer;
+}
+
+
+
+/* For mobile devices (phones) */
+@media (max-width: 600px) {
+    .loginContainer {
+        width: 100%;
+        max-width: 95%;
+        padding: 10px;
+        margin: 5px auto;
+    }
+
+    h2 {
+        font-family: Sakkal Majalla;
+        font-size: 30px;
+        font-weight: 400;
+        line-height: 55.86px;
+        text-align: center;
+    }
+
+    p {
+        font-family: Sakkal Majalla;
+        font-size: 17px;
+        line-height: 34.91px;
+        text-align: center;
+    }
+
+    span {
+        font-family: Sakkal Majalla;
+        font-size: 17px;
+        line-height: 34.91px;
+        text-align: center;
+    }
+
+    .tabs {
+
+        gap: 10px;
+    }
+
+    .tabs button {
+        font-size: 14px;
+        padding: 8px;
+    }
+
+    input {
+        padding: 10px 30px 10px 8px;
+    }
+
+    .options {
+        align-items: flex-start;
+        font-size: 12px;
+    }
+
+    .loginButton {
+        padding: 10px;
+    }
+
+    .socialIcons {
+        gap: 8px;
+    }
+
+    .socialIcons i {
+        font-size: 18px;
+    }
+
+    .fingerprint i {
+        font-size: 40px;
+    }
+}
