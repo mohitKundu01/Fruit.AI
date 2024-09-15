@@ -15,7 +15,7 @@ const FAQ = () => {
     useEffect(() => {
         const fetchFAQData = async () => {
             try {
-                const response = await fetch('http://localhost:8000/faqs');
+                const response = await fetch('https://fruit-ai-backend-mcqw.onrender.com/faqs');
                 if (!response.ok) {
                     throw new Error('Failed to fetch FAQ data');
                 }
@@ -44,7 +44,7 @@ const FAQ = () => {
 
     const handleDeleteFAQ = async (id) => {
         try {
-            await fetch(`http://localhost:8000/faqs/${id}`, {
+            await fetch(`https://fruit-ai-backend-mcqw.onrender.com/faqs/${id}`, {
                 method: 'DELETE',
             });
             setFaqData(faqData.filter((faq) => faq.id !== id));
