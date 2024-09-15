@@ -23,7 +23,7 @@ const AddFAQForm = ({ onClose, onAddFAQ, editFAQ }) => {
         const newFAQ = { heading, question, answer, image_url: imageUrl };
 
         try {
-            const response = await fetch(`http://localhost:8000/faqs${editFAQ ? `/${editFAQ.id}` : ''}`, {
+            const response = await fetch(`https://fruit-ai-backend-mcqw.onrender.com/faqs${editFAQ ? `/${editFAQ.id}` : ''}`, {
                 method: editFAQ ? 'PUT' : 'POST',
                 headers: {
                     'Content-Type': 'application/json',
